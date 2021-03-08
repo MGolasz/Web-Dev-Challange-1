@@ -61,7 +61,6 @@ input {
   border: none;
   border-left: 1px solid gray;
   width: 275px;
-  height: 40px;
 }
 
 .Tmessage {
@@ -80,8 +79,8 @@ input {
 }
 
 input::-webkit-input-placeholder {
-  padding-left: 20px;
   font-size: larger;
+  padding: 0 0 0 10px;
 }
 
 .check {
@@ -214,6 +213,7 @@ button {
   height: 40px;
   margin: 10px;
   padding: 5px;
+  display: flex;
 }
 
 .password {
@@ -223,6 +223,7 @@ button {
   height: 40px;
   margin: 10px;
   padding: 5px;
+  display: flex;
 }
 
 .email {
@@ -232,6 +233,7 @@ button {
   height: 40px;
   margin: 10px;
   padding: 5px;
+  display: flex;
 }
 
 .location {
@@ -241,6 +243,7 @@ button {
   height: 40px;
   margin: 10px;
   padding: 5px;
+  display: flex;
 }
 
 .phone {
@@ -251,6 +254,7 @@ button {
   height: 40px;
   margin: 10px;
   padding: 5px;
+  display: flex;
 }
 
 .message {
