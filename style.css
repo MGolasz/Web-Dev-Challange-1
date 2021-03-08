@@ -1,5 +1,7 @@
 body {
   background: url(imgs/Background.jpg) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
 }
 .logo {
   height: 140px;
@@ -8,30 +10,48 @@ body {
 .main {
   max-width: 1400px;
   display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
+  justify-content: center;
+  flex-direction: row wrap;
 }
 
 .left {
-  margin-left: 300px;
+  width: 50%;
+  margin: 0 100px 0 0;
 }
 
 .right {
-  margin-right: 50px;
+  width: 50%;
 }
 
 img {
   height: auto;
-  width: 25px;
-  margin-top: 5px;
-  padding-left: 10px;
+  max-width: 25px;
+  width: 100%;
+  margin: 5px 0px 0px 10px;
 }
 
-h1 {
+section.header-name {
   color: white;
   text-shadow: 1px 1px black;
-  font-size: 24px;
+  font-size: 32px;
   text-align: center;
+}
+
+.wrapper-inside-horizontally {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-to-each {
+  display: flex;
+  align-items: center;
+  color: rgb(143, 143, 143);
+}
+
+.wrapper-inside-vertically {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input {
@@ -44,19 +64,22 @@ input {
   height: 40px;
 }
 
-.bigbox {
+.Tmessage {
   border: none;
-  height: 230px;
-  width: 335px;
-  margin-left: -5px;
+  resize: none;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 0;
   text-align: left;
+  font-size: larger;
 }
 
-.bigbox::placeholder {
-  padding-left: 5px;
+.Tmessage:focus {
+  outline: none;
 }
 
-::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
   padding-left: 20px;
   font-size: larger;
 }
@@ -82,8 +105,16 @@ input {
   border-radius: 5px;
 }
 
-.space1 {
-  margin-top: 20px;
+label.center {
+  display: flex;
+  align-items: center;
+  color: rgb(143, 143, 143);
+  margin: 0 0 5px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .check:active {
@@ -101,8 +132,6 @@ button {
   border: 1px solid rgb(84, 169, 11);
   width: 140px;
   height: 40px;
-  margin: 5px;
-  margin-left: 10px;
   color: white;
 }
 
@@ -137,11 +166,6 @@ button {
   float: right;
 }
 
-.bright {
-  float: right;
-  margin-top: -30px;
-}
-
 .box {
   background: rgb(244, 244, 244);
   padding: 10px;
@@ -151,6 +175,7 @@ button {
   -moz-box-shadow: -1px 1px 5px 9px rgba(0, 0, 0, 0.3);
   box-shadow: -1px 1px 5px 20px rgba(0, 0, 0, 0.3);
 }
+
 .register {
   background: rgb(244, 244, 244);
   width: 360px;
@@ -238,10 +263,6 @@ button {
   padding: 5px;
 }
 
-p {
-  margin-left: 40px;
-  margin-top: -20px;
-  margin-bottom: 0px;
-  padding: 0px;
-  color: rgb(143, 143, 143);
+:focus {
+  outline: none;
 }
